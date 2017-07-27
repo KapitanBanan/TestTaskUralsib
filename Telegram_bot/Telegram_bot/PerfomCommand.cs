@@ -1327,15 +1327,16 @@ namespace Telegram
                     ResponseReceived(this, e);
                     if (e.message.Equals("Choice"))
                     {
+                        int sourse = Convert.ToInt32(e.chatID);
                         if (random.Next() % 2 == 0)
                         {
                             Method m = new Method("400903277:AAEM0U5upc2DuJmDm9UFsLkpx222H_snOP8");
-                            m.SendPhotoImputFile(426565057, @"E:\Eagle.JPG", "Выпал ОРЕЛ!");
+                            m.SendPhotoImputFile(sourse, @"E:\Eagle.JPG", "Выпал ОРЕЛ!");
                         }
                         else
                         {
                             Method m = new Method("400903277:AAEM0U5upc2DuJmDm9UFsLkpx222H_snOP8");
-                            m.SendPhotoImputFile(426565057, @"E:\Number.JPG", "Выпала РЕШКА!");
+                            m.SendPhotoImputFile(sourse, @"E:\Number.JPG", "Выпала РЕШКА!");
                         }
                     }
                 }
