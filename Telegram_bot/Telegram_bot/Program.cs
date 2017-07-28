@@ -19,16 +19,7 @@ namespace Telegram_bot
             Thread thr = new Thread(Tr.GetUpdates);
             thr.IsBackground = true;
             thr.Start();
-            //Console.Read();
-            //--------------------------------------МЕТОДЫ------------------------------------
-            //Method m = new Method(Settings.Default.Token);
-            //m.Getme();
-            //m.SendMessage("Ну привет", 426565057);
-            //m.FormatMessage(426565057, 426565057, 9);
-            //Console.WriteLine(m.Getme());
-            //m.SendPhotoImputFile(ChatID, @"E:\Eagle.JPG", "Выпал ОРЕЛ!");
             Console.ReadLine();
-            //--------------------------------------------------------------------------------
         }
 
         private static void Tr_ResponseReceived(object sendr, ParameterResponse e)
